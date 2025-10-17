@@ -6,7 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/PauloPimentel-github/desafio-multithreading/internal/dto"
+	"github.com/PauloPimentel-github/desafio-multithreading/dto"
+	"github.com/PauloPimentel-github/desafio-multithreading/service"
 )
 
 func main() {
@@ -42,8 +43,8 @@ func searchCEP(cep string) dto.CEPResult {
 	resultChan := make(chan dto.CEPResult, 1)
 
 	// 3. Lança as duas Goroutines
-	go FetchBrasilAPI(ctx, cep, resultChan)
-	go FetchViaCEP(ctx, cep, resultChan)
+	go service.FetchBrasilAPI(ctx, cep, resultChan)
+	go service.FetchViaCEP(ctx, cep, resultChan)
 
 	// 4. Usa o 'select' para esperar pelo resultado ou pelo timeout
 	select {

@@ -1,4 +1,4 @@
-package handlers
+package service
 
 import (
 	"context"
@@ -54,6 +54,7 @@ func FetchBrasilAPI(ctx context.Context, cep string, channel chan<- dto.CEPResul
 }
 
 func FetchViaCEP(ctx context.Context, cep string, channel chan<- dto.CEPResult) {
+	time.Sleep(time.Second * 2)
 	log.Printf("Iniciando busca na ViaCEP...")
 	url := fmt.Sprintf("http://viacep.com.br/ws/%s/json/", cep)
 
