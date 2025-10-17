@@ -48,10 +48,8 @@ A solução demonstra a proficiência em técnicas avançadas de concorrência e
 * Go instalado (versão 1.18 ou superior).
 
 1.  Clone o repositório:
-    ```bash
+
     git clone [https://github.com/PauloPimentel-github/desafio-multithreading.git](https://github.com/PauloPimentel-github/desafio-multithreading.git)
-    cd seu-repositorio
-    ```
 
 2.  Execute o arquivo principal, passando o CEP desejado como argumento        (Exemplo: 07263725):
     ```bash
