@@ -58,5 +58,9 @@ A solução demonstra a proficiência em técnicas avançadas de concorrência e
     go run main.go | go run main.go --cep=07263725
     ```
 
+### ⚡ Esta é uma demonstração do resultado da busca mais rápida:
+
+![Screenshot do Terminal](assets/log.png)
+
 ## Curso Go Expert (Full Cycle)
 <p>Feito com ♥ by Paulo H.G Pimentel</p>
